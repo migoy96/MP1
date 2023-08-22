@@ -1,0 +1,217 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar_logo{
+    color: lightgray;
+}
+
+.navbar_logo:hover{
+    font-size: 15pt;
+    color: white;
+    transition: 0.25s;
+}
+
+.see_all{
+    text-decoration: none;
+    color: rgb(10, 10, 10);
+}
+
+.see_all:hover{
+    color: rgb(153, 123, 123);
+    text-decoration: underline;
+    font-size: 13pt;
+    transition: 0.5s;
+}
+
+.quantity{
+    width: 85px;
+    margin-bottom: 10px;
+}
+
+/* footer styling */
+
+.footer_nav{
+    list-style: none;
+    padding-bottom: 7px;
+    font-size: 10pt;
+}
+
+.footer_nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+}
+
+.footer_nav a:hover{
+    color: gray;
+    transition: 0.5s;
+    font-weight: 700;
+
+}
+
+.pmethod{
+    font-size: 10pt;
+    font-weight: 700;
+}
+
+.socmed_head{
+    font-size: 10pt;
+    font-weight: 700;
+}
+
+.footer_socmed{
+    list-style: none;
+    font-size: 27pt;
+    display: inline-block;
+    padding-right: 20px;
+}
+
+
+.footer_socmed a:hover{
+    transition: 0.5s;
+    font-size: 30pt;
+}
+
+/* log in and sign up page styling */
+
+.reg_forgot{
+    justify-content: space-between;
+    display: flex;
+}
+
+.reg_forgot a{
+    text-decoration: none;
+    color: black;
+}
+
+.reg_forgot a:hover{
+    color: gray;
+}
+
+.liner_col{
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;  
+}
+
+
+.liner_span{
+    padding: 0 8px;
+    font-size: 10pt;
+    color: gray;
+}
+
+.already_have{
+    text-decoration: underline;
+    color: black;
+    
+}
+
+.already_have:hover{
+    color: gray;
+}
+
+
+
+/* image hover for cards in home */
+
+
+
+.container{
+    position: relative;
+    padding-bottom: 20px;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    height: auto;
+    transition: .5s ease;
+    border-radius: 10px;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    color: black;
+    font-size: 30px;
+    padding: 16px 32px;
+    font-weight: bolder;
+  }
+
+  .text_deco{
+    text-decoration: none;
+  }
+
+  /* checkout page button hover */
+
+
+.continuebtn:hover{
+    color: white;
+}
+
+.payment_content{
+    font-size: 10pt;
+
+}
+
+/* border for all prod and categories (allprod page and catergory page) */
+
+.border_category{
+    border-top: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+.border_prod{
+    border-top: 1px solid lightgrey;
+    border-left: 1px solid lightgrey;
+    border-bottom: 1px solid lightgrey;
+}
+
+/* display text and color for category (all prod and per gategories) */
+
+.category_display{
+    color: black;
+    text-decoration: none;
+}
+
+.category_display li{
+    
+    margin-top: 25px;
+}
+
+.category_display:hover{
+    color: rgb(95, 95, 95);
+    font-weight: 700;
+    transition: 0.5s ease;
+}
+
+/* pagination color and hover */
+
+
+.page-item .page-link:hover{
+    background-color: rgb(150, 150, 150);
+    color: black;
+}
+
+.page-item .page-link.active{
+    background-color: rgb(138, 101, 101);
+}
