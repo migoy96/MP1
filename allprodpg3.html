@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image" href="images/logo/link-logo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>All Products (Page 3) - Salud!PH</title>
+</head>
+<body>
+    <!-- start of navbar -->
+    <nav class="navbar navbar-expand-xl bg-dark" data-bs-theme="dark" style="box-shadow: 0px 0px 20px;">
+        <div class="container-fluid">
+          <center> <a class="navbar-brand" href="index.html"><img src="images/logo/darknav-logo.png"
+                style="height: 40px; width: 200px; margin-left: 30px; margin-bottom: 15px; margin-top: 15px;"></a> </center>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ps-2 fw-bold">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ps-2 fw-bold">
+                <a class="nav-link" href="allprod.html">All Products</a>
+              </li>
+              <li class="nav-item dropdown ps-2 fw-bold">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="BEER.html">Beer</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="GIN.html">Gin</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="BRANDY.html">Brandy</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="WHISKY.html">Whisky</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="VODKA.html">Vodka</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="TEQUILA.html">Tequila</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="RUM.html">Rum</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="LIQUEUR.html">Liqueur</a></li>
+                </ul>
+              </li>
+              <li class="nav-item ps-2 fw-bold">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+            </ul>
+            <div>
+    
+              <!-- add to cart navbar -->
+              <a href="checkout.html" class="navbar_logo"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                  class="bi bi-cart3 me-5 ms-2 mb-2" viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                </svg></a>
+    
+                <!-- log in navbar -->
+              <a href="login.html" class="navbar_logo"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                  class="bi bi-person-circle me-5 mb-2" viewBox="0 0 16 16">
+                  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+                  <path fill-rule="evenodd"
+                    d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+                </svg></a>
+            </div>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2 fst-italic" type="search" placeholder="Search your Brand" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- end of navbar -->
+
+      <!-- all prod content start -->
+      <div class="container-fluid bg-secondary-subtle">
+        <div class="container bg-light pt-5">
+          <h1 class="text-center fw-bold">ALL PRODUCTS</h1>
+            <p class="text-center fst-italic">"Sip & Savor: Explore a World of Spirits at Salud PH"</p>
+          <div class="row mb-5">
+            <div class="col-lg-2 col-md-3 col-sm mt-3 pt-3 border_category">
+              <h6 class="fw-bold text-center">Categories</h6> <hr>
+              <ul>
+                <a href="BEER.html" class="category_display"><li>Beer</li></a>
+                <a href="GIN.html" class="category_display"><li>Gin</li></a>
+                <a href="BRANDY.html" class="category_display"><li>Brandy</li></a>
+                <a href="WHISKY.html" class="category_display"><li>Whisky</li></a>
+                <a href="VODKA.html" class="category_display"><li>Vodka</li></a>
+                <a href="TEQUILA.html" class="category_display"><li>Tequila</li></a>
+                <a href="RUM.html" class="category_display"><li>Rum</li></a>
+                <a href="LIQUEUR.html" class="category_display"><li style="margin-bottom: 50px;">Liqueur</li></a>
+              </ul> <hr>
+            </div>
+
+            <!-- 1st card -->
+            <div class="col-lg-10 col-md-9 col-sm mt-3 border_prod">
+              <div class="card d-md-inline-block m-3">
+                <img src="images/Rum/bacardiwhite.webp" class="card-img-top mx-auto mt-4" style="height: 200px; width: 200px;">
+                <div class="card-body text-center mb-2">
+                  <h6 class="card-title fw-bold">Bacardi White Rum</h6><br>
+                  <p class="card-text">Php 130.000</p>
+                  <label for="qty">QTY:</label>
+                  <input type="number" class="quantity"><br>
+                  <!-- add to cart modal -->
+                  <button type="button" class="btn btn-secondary border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Add to Cart
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">ADDED TO CART</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Your item has been added to your cart.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="checkout.html"><button type="button" class="btn btn-dark">Proceed Checkout</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- buy button -->
+                  <a href="checkout.html" class="btn btn-dark">Buy</a>  
+                </div>
+              </div>
+            
+
+                  <!-- 2nd card -->
+              <div class="card d-md-inline-block m-3">
+                <img src="images/Rum/bacardiwhite.webp" class="card-img-top mx-auto mt-4" style="height: 200px; width: 200px;">
+                <div class="card-body text-center mb-2">
+                  <h6 class="card-title fw-bold">Bacardi White Rum</h6><br>
+                  <p class="card-text">Php 130.000</p>
+                  <label for="qty">QTY:</label>
+                  <input type="number" class="quantity"><br>
+                      <!-- add to cart modal -->
+                  <button type="button" class="btn btn-secondary border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add to Cart
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">ADDED TO CART</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Your item has been added to your cart.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="checkout.html"><button type="button" class="btn btn-dark">Proceed Checkout</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- buy button -->
+                  <a href="checkout.html" class="btn btn-dark">Buy</a>
+                </div>
+              </div>
+
+              <!-- 3rd card -->
+              <div class="card d-md-inline-block m-3">
+                <img src="images/Rum/bacardiwhite.webp" class="card-img-top mx-auto mt-4" style="height: 200px; width: 200px;">
+                <div class="card-body text-center mb-2">
+                  <h6 class="card-title fw-bold">Bacardi White Rum</h6><br>
+                  <p class="card-text">Php 130.000</p>
+                  <label for="qty">QTY:</label>
+                  <input type="number" class="quantity"><br>
+                      <!-- add to cart modal -->
+                  <button type="button" class="btn btn-secondary border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add to Cart
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">ADDED TO CART</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Your item has been added to your cart.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="checkout.html"><button type="button" class="btn btn-dark">Proceed Checkout</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- buy button -->
+                  <a href="checkout.html" class="btn btn-dark">Buy</a>
+                </div>
+              </div>
+
+              <!-- 4th card -->
+              <div class="card d-md-inline-block m-3">
+                <img src="images/Rum/bacardiwhite.webp" class="card-img-top mx-auto mt-4" style="height: 200px; width: 200px;">
+                <div class="card-body text-center mb-2">
+                  <h6 class="card-title fw-bold">Bacardi White Rum</h6><br>
+                  <p class="card-text">Php 130.000</p>
+                  <label for="qty">QTY:</label>
+                  <input type="number" class="quantity"><br>
+                      <!-- add to cart modal -->
+                  <button type="button" class="btn btn-secondary border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add to Cart
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">ADDED TO CART</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Your item has been added to your cart.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="checkout.html"><button type="button" class="btn btn-dark">Proceed Checkout</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- buy button -->
+                  <a href="checkout.html" class="btn btn-dark">Buy</a>
+                </div>
+              </div>
+
+              <!-- 5th card -->
+              <div class="card d-md-inline-block m-3">
+                <img src="images/Rum/bacardiwhite.webp" class="card-img-top mx-auto mt-4" style="height: 200px; width: 200px;">
+                <div class="card-body text-center mb-2">
+                  <h6 class="card-title fw-bold">Bacardi White Rum</h6><br>
+                  <p class="card-text">Php 130.000</p>
+                  <label for="qty">QTY:</label>
+                  <input type="number" class="quantity"><br>
+                      <!-- add to cart modal -->
+                  <button type="button" class="btn btn-secondary border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add to Cart
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">ADDED TO CART</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Your item has been added to your cart.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="checkout.html"><button type="button" class="btn btn-dark">Proceed Checkout</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- buy button -->
+                  <a href="checkout.html" class="btn btn-dark">Buy</a>
+                </div>
+              </div>
+              
+              <!-- 6th card -->
+              <div class="card d-md-inline-block m-3">
+                <img src="images/Rum/bacardiwhite.webp" class="card-img-top mx-auto mt-4" style="height: 200px; width: 200px;">
+                <div class="card-body text-center mb-2">
+                  <h6 class="card-title fw-bold">Bacardi White Rum</h6><br>
+                  <p class="card-text">Php 130.000</p>
+                  <label for="qty">QTY:</label>
+                  <input type="number" class="quantity"><br>
+                      <!-- add to cart modal -->
+                  <button type="button" class="btn btn-secondary border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add to Cart
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">ADDED TO CART</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Your item has been added to your cart.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="checkout.html"><button type="button" class="btn btn-dark">Proceed Checkout</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- buy button -->
+                  <a href="checkout.html" class="btn btn-dark">Buy</a>
+                </div>
+              </div>
+
+              <!-- 7th card -->
+              <div class="card d-md-inline-block m-3">
+                <img src="images/Rum/bacardiwhite.webp" class="card-img-top mx-auto mt-4" style="height: 200px; width: 200px;">
+                <div class="card-body text-center mb-2">
+                  <h6 class="card-title fw-bold">Bacardi White Rum</h6><br>
+                  <p class="card-text">Php 130.000</p>
+                  <label for="qty">QTY:</label>
+                  <input type="number" class="quantity"><br>
+                      <!-- add to cart modal -->
+                  <button type="button" class="btn btn-secondary border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add to Cart
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">ADDED TO CART</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Your item has been added to your cart.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="checkout.html"><button type="button" class="btn btn-dark">Proceed Checkout</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- buy button -->
+                  <a href="checkout.html" class="btn btn-dark">Buy</a>
+                </div>
+              </div>
+
+              <!-- 8th card -->
+              <div class="card d-md-inline-block m-3">
+                <img src="images/Rum/bacardiwhite.webp" class="card-img-top mx-auto mt-4" style="height: 200px; width: 200px;">
+                <div class="card-body text-center mb-2">
+                  <h6 class="card-title fw-bold">Bacardi White Rum</h6><br>
+                  <p class="card-text">Php 130.000</p>
+                  <label for="qty">QTY:</label>
+                  <input type="number" class="quantity"><br>
+                      <!-- add to cart modal -->
+                  <button type="button" class="btn btn-secondary border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add to Cart
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">ADDED TO CART</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Your item has been added to your cart.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="checkout.html"><button type="button" class="btn btn-dark">Proceed Checkout</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- buy button -->
+                  <a href="checkout.html" class="btn btn-dark">Buy</a>
+                </div>
+              </div>
+
+              <!-- 9th card -->
+              <div class="card d-md-inline-block m-3">
+                <img src="images/Rum/bacardiwhite.webp" class="card-img-top mx-auto mt-4" style="height: 200px; width: 200px;">
+                <div class="card-body text-center mb-2">
+                  <h6 class="card-title fw-bold">Bacardi White Rum</h6><br>
+                  <p class="card-text">Php 130.000</p>
+                  <label for="qty">QTY:</label>
+                  <input type="number" class="quantity"><br>
+                      <!-- add to cart modal -->
+                  <button type="button" class="btn btn-secondary border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add to Cart
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">ADDED TO CART</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Your item has been added to your cart.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="checkout.html"><button type="button" class="btn btn-dark">Proceed Checkout</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- buy button -->
+                  <a href="checkout.html" class="btn btn-dark">Buy</a>
+                </div>
+              </div>
+
+              <!-- 10th card -->
+              <div class="card d-md-inline-block m-3">
+                <img src="images/Rum/bacardiwhite.webp" class="card-img-top mx-auto mt-4" style="height: 200px; width: 200px;">
+                <div class="card-body text-center mb-2">
+                  <h6 class="card-title fw-bold">Bacardi White Rum</h6><br>
+                  <p class="card-text">Php 130.000</p>
+                  <label for="qty">QTY:</label>
+                  <input type="number" class="quantity"><br>
+                      <!-- add to cart modal -->
+                  <button type="button" class="btn btn-secondary border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add to Cart
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">ADDED TO CART</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Your item has been added to your cart.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="checkout.html"><button type="button" class="btn btn-dark">Proceed Checkout</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- buy button -->
+                  <a href="checkout.html" class="btn btn-dark">Buy</a>
+                </div>
+              </div>
+
+              <!-- 11th card -->
+              <div class="card d-md-inline-block m-3">
+                <img src="images/Rum/bacardiwhite.webp" class="card-img-top mx-auto mt-4" style="height: 200px; width: 200px;">
+                <div class="card-body text-center mb-2">
+                  <h6 class="card-title fw-bold">Bacardi White Rum</h6><br>
+                  <p class="card-text">Php 130.000</p>
+                  <label for="qty">QTY:</label>
+                  <input type="number" class="quantity"><br>
+                      <!-- add to cart modal -->
+                  <button type="button" class="btn btn-secondary border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add to Cart
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">ADDED TO CART</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Your item has been added to your cart.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="checkout.html"><button type="button" class="btn btn-dark">Proceed Checkout</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- buy button -->
+                  <a href="checkout.html" class="btn btn-dark">Buy</a>
+                </div>
+              </div>
+
+              <!-- 12th card -->
+              <div class="card d-md-inline-block m-3">
+                <img src="images/Rum/bacardiwhite.webp" class="card-img-top mx-auto mt-4" style="height: 200px; width: 200px;">
+                <div class="card-body text-center mb-2">
+                  <h6 class="card-title fw-bold">Bacardi White Rum</h6><br>
+                  <p class="card-text">Php 130.000</p>
+                  <label for="qty">QTY:</label>
+                  <input type="number" class="quantity"><br>
+                      <!-- add to cart modal -->
+                  <button type="button" class="btn btn-secondary border-dark" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Add to Cart
+                  </button>
+                  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5" id="exampleModalLabel">ADDED TO CART</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          Your item has been added to your cart.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                          <a href="checkout.html"><button type="button" class="btn btn-dark">Proceed Checkout</button></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- buy button -->
+                  <a href="checkout.html" class="btn btn-dark">Buy</a>
+                </div>
+              </div>
+
+              <!-- pagination -->
+              <nav aria-label="Page navigation example">
+                <ul class="pagination pagination-sm justify-content-center mt-4 mb-4">
+                  <li class="page-item">
+                    <a class="page-link" href="allprodpg2.html">Previous</a>
+                  </li>
+                  <li class="page-item"><a class="page-link" href="allprod.html">1</a></li>
+                  <li class="page-item"><a class="page-link" href="allprodpg2.html">2</a></li>
+                  <li class="page-item"><a class="page-link active" href="allprodpg3.html">3</a></li>
+                  <li class="page-item"><a class="page-link" href="allprodpg4.html">4</a></li>
+                  <li class="page-item"><a class="page-link" href="allprodpg5.html">5</a></li>
+                  <li class="page-item">
+                    <a class="page-link" href="allprodpg4.html">Next</a>
+                  </li>
+                </ul>
+              </nav>
+              <!-- end of pagination -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- end of all prod cont -->
+
+
+      <!-- start of footer -->
+
+      <div class="container-fluid bg-dark text-light">
+        <div class="row">
+          <div class="col-sm">
+            <a href="index.html"><img src="images/logo/darknav-logo.png"
+                style="height: 40px; width: 200px; margin-top: 50px; margin-left: 30px;"></a>
+          </div>
+          <div class="col-sm">
+            <ul><br><br>
+              <li class="footer_nav"><a href="index.html">Home</a></li>
+              <li class="footer_nav"><a href="allprod.html">All Products</a></li>
+              <li class="footer_nav"><a href="about.html">About Us</a></li>
+              <li class="footer_nav"><a href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+    
+          <!-- payment method part of footer -->
+    
+          <div class="col-sm">
+            <ul><br>
+              <p class="pmethod">Payment Methods:</p>
+              <li style="list-style: none;">
+                <i class="fa-brands fa-cc-visa fa-lg" style="color: #000000; font-size: 40pt;padding-top: 20px;"></i>&nbsp;
+    
+                <i class="fa-brands fa-cc-mastercard fa-lg"
+                  style="color: #000000; font-size: 40pt; padding-top: 20px;"></i>&nbsp;
+    
+                <i class="fa-brands fa-cc-paypal fa-lg" style="color: #000000; font-size: 40pt; padding-top: 20px;"></i><br>
+    
+                <img src="images/logo/GCash_Logo.png" style="width: 50px; height: 65px; padding-top: 15px;">&nbsp;
+    
+                <img src="images/logo/maya.jpg" style="width: 60px; height: 65px;
+                    padding-top: 15px;">
+              </li>
+            </ul>
+          </div>
+    
+          <!-- social media part of fooeter -->
+          <div class="col-sm">
+            <ul><br>
+              <p class="socmed_head">Follow us on Social Media:</p>
+              <li class="footer_socmed">
+                <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-lg" style="color: #3b5998;"></i></a>
+              </li>
+              <li class="footer_socmed">
+                <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-lg" style="color: #d62976;"></i></a>
+              </li>
+              <li class="footer_socmed">
+                <a href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-lg" style="color: #c4302b;"></i></a>
+              </li>
+              <li class="footer_socmed">
+                <a href="https://www.twitter.com"><i class="fa-brands fa-twitter fa-lg" style="color: #00acee;"></i></a>
+              </li>
+              <li class="footer_socmed">
+                <a href="https://www.google.com"><i class="fa-brands fa-google fa-lg" style="color: #3cba54"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- end of footer -->
+
+      <!-- start of copyright -->
+  <div style="font-size: 9pt; height: 18px; width: 100%; background-color: black; color: white; text-align: center;">
+    <p class="fst-italic">Copyright &copy; 2023 - Miguel Carlos Blancaflor</p>
+  </div>
+    
+</body>
+</html>
