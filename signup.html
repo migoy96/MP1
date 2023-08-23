@@ -20,7 +20,7 @@
     <nav class="navbar navbar-expand-xl bg-dark" data-bs-theme="dark" style="box-shadow: 0px 0px 20px;">
         <div class="container-fluid">
           <center> <a class="navbar-brand" href="index.html"><img src="images/logo/darknav-logo.png"
-                style="height: 40px; width: 200px; margin-left: 30px; margin-bottom: 15px; margin-top: 15px;"></a> </center>
+                style="height: 35px; width: 170px; margin-left: 30px; margin-bottom: 15px; margin-top: 15px;"></a> </center>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -114,46 +114,77 @@
                 </div>
 
                 <!-- end of logo and slogan -->
-    
-                <div class="col-lg-8 col-sm bg-light mt-5 mb-5 rounded-2">
-                    <form>
-                        <h2 class="mt-5">Sign Up</h2>
-                        <center><hr class="w-75 pb-3"></center>
-                        <div>
-                          <label for="fname"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill me-3" viewBox="0 0 16 16">
-                            <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                          </svg></label>
-                          <input type="text" placeholder="First Name *" required class="w-50 mb-3" style="height: 45px;">
-                      </div>
 
-                      <div>
-                        <label for="lname"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill me-3" viewBox="0 0 16 16">
-                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
-                        </svg></label>
-                        <input type="text" placeholder="Last Name *" required class="w-50 mb-3" style="height: 45px;">
+                <div class="col-lg-8 col-sm bg-light mt-5 mb-5 rounded-2 pt-5">
+                  <h3>Sign-Up</h3>
+                  <hr class="w-75">
+                  <br>
+                  <form class="row w-75">
+
+                    <div class="col-lg-1 col-sm-12 mt-2">
+                      <label for="fullname" class="form-label"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-fill me-3" viewBox="0 0 16 16">
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"/>
+                      </svg></label>
+                    </div>
+                    <div class="col-lg-11 col-sm-12 mb-3">
+                      <input type="text" placeholder="Last Name, First Name, M.I., Suffix*" id="fullname" class="form-control mb-3" style="height: 45px;" required>
                     </div>
 
-                        <div>
-                            <label for="username"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle me-3" viewBox="0 0 16 16">
-                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                              </svg></label>
-                            <input type="text" placeholder="Username / Email *" required class="w-50 mb-3" style="height: 45px;">
-                        </div>
-                        <div>
-                            <label for="password"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-lock-fill me-3" viewBox="0 0 16 16">
-                                <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
-                              </svg></label>
-                            <input type="password" placeholder="Password *" reqiured class="w-50 mb-5" style="height: 45px;">
-                        </div>
+                    <div class="col-lg-1 col-sm-12 mt-2">
+                      <label for="email" class="form-label"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-envelope-at-fill" viewBox="0 0 16 16">
+                        <path d="M2 2A2 2 0 0 0 .05 3.555L8 8.414l7.95-4.859A2 2 0 0 0 14 2H2Zm-2 9.8V4.698l5.803 3.546L0 11.801Zm6.761-2.97-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 9.671V4.697l-5.803 3.546.338.208A4.482 4.482 0 0 1 12.5 8c1.414 0 2.675.652 3.5 1.671Z"/>
+                        <path d="M15.834 12.244c0 1.168-.577 2.025-1.587 2.025-.503 0-1.002-.228-1.12-.648h-.043c-.118.416-.543.643-1.015.643-.77 0-1.259-.542-1.259-1.434v-.529c0-.844.481-1.4 1.26-1.4.585 0 .87.333.953.63h.03v-.568h.905v2.19c0 .272.18.42.411.42.315 0 .639-.415.639-1.39v-.118c0-1.277-.95-2.326-2.484-2.326h-.04c-1.582 0-2.64 1.067-2.64 2.724v.157c0 1.867 1.237 2.654 2.57 2.654h.045c.507 0 .935-.07 1.18-.18v.731c-.219.1-.643.175-1.237.175h-.044C10.438 16 9 14.82 9 12.646v-.214C9 10.36 10.421 9 12.485 9h.035c2.12 0 3.314 1.43 3.314 3.034v.21Zm-4.04.21v.227c0 .586.227.8.581.8.31 0 .564-.17.564-.743v-.367c0-.516-.275-.708-.572-.708-.346 0-.573.245-.573.791Z"/>
+                      </svg></label>
+                    </div>
+                    <div class="col-lg-11 col-sm-12 mb-3">
+                      <input type="email" placeholder="Email Address*" id="email" class="form-control mb-3" style="height: 45px;" required>
+                    </div>
 
-                        <a href="index.html"><div class="btn btn-dark w-50 mb-3">SIGN UP</div></a>
-                        <div class="row-md w-50">
+                    <div class="col-lg-1 col-sm-12 mt-2">
+                      <label for="username" class="form-label"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-circle me-3" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                      </svg></label>
+                    </div>
+                    <div class="col-lg-11 col-sm-12 mb-3">
+                      <input type="text" placeholder="Username*" id="username" class="form-control mb-3" style="height: 45px;" required>
+                    </div>
+
+                    <div class="col-lg-1 col-sm-12 mt-1">
+                      <label for="password" class="form-label"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-lock-fill me-3" viewBox="0 0 16 16">
+                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                      </svg></label>
+                    </div>
+                    <div class="col-lg-11 col-sm-12 mb-4">
+                      <input type="password" class="form-control" id="password" placeholder="Password* (atleast 6 characters)" minlength="6" required>
+                    </div>
+
+                    <center><div class="col-xxl-7">
+                      <div class="form-check mb-3">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required checked>
+                        <label class="form-check-label" for="invalidCheck2">
+                          I have read and agree to the terms of services
+                        </label>
+                      </div>
+                    </div> </center>
+                    <div>
+                      <button class="btn btn-dark mb-3" type="submit"><a href="index.html" style="text-decoration: none; color: #fff;">LOG-IN</a></button>
+                    </div>
+
+                    <center>
+                      <div>
+                        <p>Already have an account? <a href="login.html" class="already_have">Log In Here</a></p>
+                      </div>
+                    </center>
+
+                  </form>
+
+                        <!-- <div class="row-md w-50">
                           <p>Already have an account ? <a href="login.html" class="already_have">Log In Here</a></p>
-                        </div>
+                        </div> -->
 
                         <!-- end of sign up -->
-                    
+
                         <div class="liner_col">
                             <div class="w-50 bg-secondary-subtle border"></div>
                             <span class="liner_span">OR</span>
@@ -172,7 +203,7 @@
                         </div>
 
                         <!-- end of alternative log in -->
-                        
+
                     </form>
                 </div>
             </div>
@@ -188,38 +219,38 @@
         <div class="row">
           <div class="col-sm">
             <a href="index.html"><img src="images/logo/darknav-logo.png"
-                style="height: 40px; width: 200px; margin-top: 50px; margin-left: 30px;"></a>
+                style="height: 35px; width: 170px; margin-top: 50px; margin-left: 30px;"></a>
           </div>
           <div class="col-sm">
             <ul><br><br>
               <li class="footer_nav"><a href="index.html">Home</a></li>
               <li class="footer_nav"><a href="allprod.html">All Products</a></li>
               <li class="footer_nav"><a href="about.html">About Us</a></li>
-              <li class="footer_nav"><a href="#">Terms and Conditions</a></li>
+              <li class="footer_nav"><a href="terms.html">Terms and Conditions</a></li>
             </ul>
           </div>
-    
+
           <!-- payment method part of footer -->
-    
+
           <div class="col-sm">
             <ul><br>
               <p class="pmethod">Payment Methods:</p>
               <li style="list-style: none;">
                 <i class="fa-brands fa-cc-visa fa-lg" style="color: #000000; font-size: 40pt;padding-top: 20px;"></i>&nbsp;
-    
+
                 <i class="fa-brands fa-cc-mastercard fa-lg"
                   style="color: #000000; font-size: 40pt; padding-top: 20px;"></i>&nbsp;
-    
+
                 <i class="fa-brands fa-cc-paypal fa-lg" style="color: #000000; font-size: 40pt; padding-top: 20px;"></i><br>
-    
+
                 <img src="images/logo/GCash_Logo.png" style="width: 50px; height: 65px; padding-top: 15px;">&nbsp;
-    
+
                 <img src="images/logo/maya.jpg" style="width: 60px; height: 65px;
                     padding-top: 15px;">
               </li>
             </ul>
           </div>
-    
+
           <!-- social media part of fooeter -->
           <div class="col-sm">
             <ul><br>

@@ -75,14 +75,10 @@ body{
 
 /* log in and sign up page styling */
 
-.reg_forgot{
-    justify-content: space-between;
-    display: flex;
-}
 
 .reg_forgot a{
-    text-decoration: none;
-    color: black;
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
 }
 
 .reg_forgot a:hover{
@@ -129,6 +125,8 @@ body{
     height: auto;
     transition: .5s ease;
     border-radius: 10px;
+    width: 200px;
+    height: 230px;
   }
   
   .middle {
@@ -194,7 +192,6 @@ body{
 }
 
 .category_display li{
-    
     margin-top: 25px;
 }
 

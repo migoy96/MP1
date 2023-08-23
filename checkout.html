@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-xl bg-dark" data-bs-theme="dark" style="box-shadow: 0px 0px 20px;">
         <div class="container-fluid">
           <center> <a class="navbar-brand" href="index.html"><img src="images/logo/darknav-logo.png"
-                style="height: 40px; width: 200px; margin-left: 30px; margin-bottom: 15px; margin-top: 15px;"></a> </center>
+                style="height: 35px; width: 170px; margin-left: 30px; margin-bottom: 15px; margin-top: 15px;"></a> </center>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -39,39 +39,39 @@
                   Categories
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Beer</a></li>
+                  <li><a class="dropdown-item" href="BEER.html">Beer</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">Gin</a></li>
+                  <li><a class="dropdown-item" href="GIN.html">Gin</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">Brandy</a></li>
+                  <li><a class="dropdown-item" href="BRANDY.html">Brandy</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">Whisky</a></li>
+                  <li><a class="dropdown-item" href="WHISKY.html">Whisky</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">Vodka</a></li>
+                  <li><a class="dropdown-item" href="VODKA.html">Vodka</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">Tequila</a></li>
+                  <li><a class="dropdown-item" href="TEQUILA.html">Tequila</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">Rum</a></li>
+                  <li><a class="dropdown-item" href="RUM.html">Rum</a></li>
                   <li>
                     <hr class="dropdown-divider">
                   </li>
-                  <li><a class="dropdown-item" href="#">Liqueur</a></li>
+                  <li><a class="dropdown-item" href="LIQUEUR.html">Liqueur</a></li>
                 </ul>
               </li>
               <li class="nav-item ps-2 fw-bold">
-                <a class="nav-link" href="#">About Us</a>
+                <a class="nav-link" href="about.html">About Us</a>
               </li>
             </ul>
             <div>
@@ -120,28 +120,36 @@
                   </h2>
                   <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
                     <div class="accordion-body">
-                      <form>
+                      <form class="row g-3">
 
                         <!-- name details -->
-                        <div class="input-group mb-3">
-                          <Input type="text" class="form-control" name="Fname" placeholder="First Name*" required></Input>
-                          <Input type="text" class="form-control" name="Lname" placeholder="Last Name*" required></Input>
-                        </div>
-
+                          <div class="col-sm-12 col-md-6 col-lg-12 col-xl-6">
+                            <label for="validationDefault01" class="form-label">First name</label>
+                            <input type="text" class="form-control" id="validationDefault01" required>
+                          </div>
+                          <div class="col-sm-12 col-md-6 col-lg-12 col-xl-6">
+                            <label for="validationDefault02" class="form-label">Last name</label>
+                            <input type="text" class="form-control" id="validationDefault02" required>
+                          </div>
                         <!-- birthdate for age confirmation -->
-                        <div class="mb-3">
-                          <input type="date" class="form-control" id="bday" required min="21" max="70">
+                        <div class="col-sm-12 col-md-6">
+                          <label for="validationDefault02" class="form-label">Birthdate</label>
+                          <input type="date" class="form-control" id="validationDefault02" required>
                         </div>
 
                         <!-- mobile number -->
-                        <div class="mb-3">
-                          <input type="text" class="form-control" id="mobilenum" placeholder="Mobile Number*" required minlength="11" maxlength="11">
+                        <div class="col-sm-12 col-md-6">
+                          <label for="validationDefault02" class="form-label">Mobile Number</label>
+                          <input type="text" class="form-control" minlength="11" maxlength="11" id="validationDefault02"  required>
                         </div>
-
-                        <!-- email address -->
-                        <div class="mb-3">
-                          <input type="email" class="form-control" id="emailadd" placeholder="Email Address">
+                        <div class="col">
+                          <label for="validationDefault02" class="form-label">Email</label>
+                          <input type="email" placeholder="example@gmail.com" class="form-control" id="validationDefault02"  required>
                         </div>
+                        <div class="col-12">
+                          <button class="btn btn-secondary mb-3" type="submit">Submit</button>
+                        </div>
+                        
                       </form>
                     </div>
                   </div>
@@ -151,7 +159,7 @@
 
                 <div class="accordion-item">
                   <h2 class="accordion-header">
-                    <button class="accordion-button collapsed bg-light mb-3" type="button" data-bs-toggle="collapse"
+                    <button class="accordion-button collapsed bg-dark text-light mb-3" type="button" data-bs-toggle="collapse"
                       data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
                       <b>Step 2 - Shipping Details</b>
                     </button>
@@ -160,36 +168,59 @@
                   <!-- address -->
                   <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
                     <div class="accordion-body form-inline mt-2 mb-2">
-                      <div class="mb-3">
-                        <Input type="text" class="form-control" name="address" placeholder="House No., Street, Barangay*" required></Input>
-                      </div>
+                      <form class="row g-3">
+                        <div class="col-sm-12">
+                          <label for="validationDefault01" class="form-label fw-medium">Address:</label>
+                          <input type="text" placeholder="House No., Street, Barangay*" class="form-control" id="validationDefault01" required>
+                        </div>
 
-                      <div class="input-group mb-3">
-                        <Input type="text" class="form-control w-25" name="city" placeholder="City/Municipality*" required></Input>
-                        <Input type="text" class="form-control w-25" name="prov" placeholder="Province*" required></Input>
-                        <Input type="text" class="form-control" name="zip" placeholder="Zip Code*"></Input>
-                      </div>
+                        <div class="col-sm-12 col-md-4 col-lg-12 col-xl-4">
+                          <label for="validationDefault01" class="form-label"></label>
+                          <input type="text" placeholder="City/Municipality*" class="form-control" id="validationDefault01" required>
+                        </div>
 
-                      <div class="input-group mb-3">
-                        <Input type="text" class="form-control" name="region" placeholder="Region*" required></Input>
-                        <Input type="text" class="form-control" name="country" placeholder="Country*" required></Input>
-                      </div>
+                        <div class="col-sm-12 col-md-5 col-lg-12 col-xl-5">
+                          <label for="validationDefault01" class="form-label"></label>
+                          <input type="text" placeholder="Province*" class="form-control" id="validationDefault01" required>
+                        </div>
 
-                      <!-- Courier -->
-                      <p style="font-size: 11pt; font-weight: 600;">Please Choose your Shipping Method:</p>
+                        <div class="col-sm-12 col-md-3 col-lg-12 col-xl-3">
+                          <label for="validationDefault01" class="form-label"></label>
+                          <input type="text" placeholder="Zip code*" class="form-control" id="validationDefault01" required>
+                        </div>
 
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                        <label class="form-check-label" for="inlineRadio1">LBC Express Inc.</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                        <label class="form-check-label" for="inlineRadio2">J & T Express</label>
-                      </div>
-                      <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
-                        <label class="form-check-label" for="inlineRadio3">Grab Food (Temporary Unavailable)</label>
-                      </div>
+                        <div class="col-sm-12 col-md-6 col-lg-12 col-xl-6">
+                          <label for="validationDefault01" class="form-label"></label>
+                          <input type="text" placeholder="Region*" class="form-control" id="validationDefault01" required>
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-12 col-xl-6">
+                          <label for="validationDefault01" class="form-label"></label>
+                          <input type="text" placeholder="Country*" class="form-control" id="validationDefault01" required>
+                        </div>
+                        <!-- Courier -->
+                        <p style="font-size: 11pt; font-weight: 600;">Please Choose your Shipping Method:</p>
+
+                        <div class="col">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" required>
+                            <label class="form-check-label" for="inlineRadio1">LBC Express Inc.</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" required>
+                            <label class="form-check-label" for="inlineRadio2">J & T Express</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" disabled>
+                            <label class="form-check-label" for="inlineRadio3">Grab Food (Temporary Unavailable)</label>
+                          </div>
+                        </div>
+                          
+
+                        <div class="col-12">
+                          <button class="btn btn-secondary mb-2" type="submit">Submit</button>
+                        </div>
+                      </form>
                     </div>
                   </div>
                 </div>
@@ -363,8 +394,7 @@
                             <b>Your Order No: KDGO08252023</b> <br> <p style="font-size: 11pt;">If you have any questions regarding your order, you can email us at <br><a href="#">inquiries@salud.ph</a> or call us at <b>(02)0825-2023</b></p>
                           </div>
                           <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <a href="index.html"><button type="button" class="btn btn-primary">View Order Details</button></a>
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal"><a href="index.html" style="text-decoration: none; color: white;">Close</a></button>
                           </div>
                         </div>
                       </div>
@@ -458,15 +488,15 @@
       <div class="container-fluid bg-dark text-light">
         <div class="row">
           <div class="col-sm">
-            <a href="#"><img src="images/logo/darknav-logo.png"
-                style="height: 40px; width: 200px; margin-top: 50px; margin-left: 30px;"></a>
+            <a href="index.html"><img src="images/logo/darknav-logo.png"
+                style="height: 35px; width: 170px; margin-top: 50px; margin-left: 30px;"></a>
           </div>
           <div class="col-sm">
             <ul><br><br>
               <li class="footer_nav"><a href="index.html">Home</a></li>
               <li class="footer_nav"><a href="allprod.html">All Products</a></li>
-              <li class="footer_nav"><a href="#">About Us</a></li>
-              <li class="footer_nav"><a href="#">Terms and Conditions</a></li>
+              <li class="footer_nav"><a href="about.html">About Us</a></li>
+              <li class="footer_nav"><a href="terms.html">Terms and Conditions</a></li>
             </ul>
           </div>
     
