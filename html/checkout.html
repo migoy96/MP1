@@ -112,10 +112,10 @@
 
           <!-- start of accordion -->
 
-          <div class="accordion mb-5" id="accordionPanelsStayOpenExample">
+          <div class="accordion mb-4" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button bg-dark text-light mb-3" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button bg-dark text-light" type="button" data-bs-toggle="collapse"
                   data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
                   aria-controls="panelsStayOpen-collapseOne">
                   <b>Step 1 - Personal Details</b>
@@ -148,31 +148,29 @@
                     </div>
                     <div class="col">
                       <label for="validationDefault02" class="form-label">Email</label>
-                      <input type="email" placeholder="example@gmail.com" class="form-control" id="validationDefault02"
+                      <input type="email" placeholder="example@gmail.com" class="form-control mb-4" id="validationDefault02"
                         required>
-                    </div>
-                    <div class="col-12">
-                      <button class="btn btn-secondary mb-3" type="submit">Submit</button>
                     </div>
 
                   </form>
                 </div>
               </div>
             </div>
+          </div>
 
             <!-- end of fisrt accordion - Personal Details -->
-
+          <div class="accordion mb-4" id="accordionPanelsStayOpenExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed bg-dark text-light mb-3" type="button"
-                  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                <button class="accordion-button collapsed bg-dark text-light" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="true"
                   aria-controls="panelsStayOpen-collapseTwo">
                   <b>Step 2 - Shipping Details</b>
                 </button>
               </h2>
 
               <!-- address -->
-              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+              <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
                 <div class="accordion-body form-inline mt-2 mb-2">
                   <form class="row g-3">
                     <div class="col-sm-12">
@@ -226,26 +224,23 @@
                         <label class="form-check-label" for="inlineRadio3">Grab Food (Temporary Unavailable)</label>
                       </div>
                     </div>
-
-
-                    <div class="col-12">
-                      <button class="btn btn-secondary mb-2" type="submit">Submit</button>
-                    </div>
                   </form>
                 </div>
               </div>
             </div>
+          </div>
 
             <!-- Payment Methods -->
+          <div class="accordion mb-5" id="accordionPanelsStayOpenExample">  
             <div class="accordion-item">
               <h2 class="accordion-header">
                 <button class="accordion-button collapsed bg-dark text-light" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                  data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true"
                   aria-controls="panelsStayOpen-collapseThree">
                   <b>Step 3 -Payment Methods</b>
                 </button>
               </h2>
-              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+              <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show">
                 <div class="accordion-body">
                   <div class="accordion accordion-flush" id="accordionFlushExample">
                     <!-- up accordion for whole payment method -->
@@ -534,14 +529,15 @@
 
   <!-- start of footer -->
 
-  <div class="container-fluid bg-dark text-light">
+  <div class="container-fluid bg-dark text-light pt-4 pb-5" style="background-color: #cccccc;">
     <div class="row">
       <div class="col-sm">
         <a href="../index.html"><img src="../images/logo/darknav-logo.png"
-            style="height: 35px; width: 170px; margin-top: 50px; margin-left: 30px;"></a>
+            style="height: 40px; width: 200px; margin-top: 50px; margin-left: 30px;"></a>
       </div>
       <div class="col-sm">
-        <ul><br><br>
+        <ul>
+          <p class="pmethod">Quick Links:</p>
           <li class="footer_nav"><a href="../index.html">Home</a></li>
           <li class="footer_nav"><a href="allprod.html">All Products</a></li>
           <li class="footer_nav"><a href="about.html">About Us</a></li>
@@ -552,28 +548,28 @@
       <!-- payment method part of footer -->
 
       <div class="col-sm">
-        <ul><br>
+        <ul>
           <p class="pmethod">Payment Methods:</p>
           <li style="list-style: none;">
-            <i class="fa-brands fa-cc-visa fa-lg" style="color: #000000; font-size: 40pt;padding-top: 20px;"></i>&nbsp;
+            <i class="fa-brands fa-cc-visa fa-lg" style="color: #f7b600; font-size: 40pt;padding-top: 20px;"></i>&nbsp;
 
             <i class="fa-brands fa-cc-mastercard fa-lg"
-              style="color: #000000; font-size: 40pt; padding-top: 20px;"></i>&nbsp;
+              style="color: #ff5f00; font-size: 40pt; padding-top: 20px;"></i>&nbsp;
 
-            <i class="fa-brands fa-cc-paypal fa-lg" style="color: #000000; font-size: 40pt; padding-top: 20px;"></i><br>
+            <i class="fa-brands fa-cc-paypal fa-lg" style="color: #dddee0; font-size: 40pt; padding-top: 20px;"></i><br>
 
-            <img src="../images/logo/GCash_Logo.png" style="width: 50px; height: 65px; padding-top: 15px;">&nbsp;
+            <img src="../images/logo/GCash_Logo.png" style="width: 50px; height: 65px; padding-top: 20px;">&nbsp;
 
             <img src="../images/logo/maya.jpg" style="width: 60px; height: 65px;
-                    padding-top: 15px;">
+                    padding-top: 20px;">
           </li>
         </ul>
       </div>
 
       <!-- social media part of fooeter -->
       <div class="col-sm">
-        <ul><br>
-          <p class="socmed_head">Follow us on Social Media:</p>
+        <ul>
+          <p class="pmethod">Follow us on Social Media:</p>
           <li class="footer_socmed">
             <a href="https://www.facebook.com"><i class="fa-brands fa-facebook fa-lg" style="color: #3b5998;"></i></a>
           </li>
@@ -581,7 +577,7 @@
             <a href="https://www.instagram.com"><i class="fa-brands fa-instagram fa-lg" style="color: #d62976;"></i></a>
           </li>
           <li class="footer_socmed">
-            <a href="https://www.youtube.com"><i class="fa-brands fa-youtube fa-lg" style="color: #c4302b;"></i></a>
+            <a href="https://www/youtube.com"><i class="fa-brands fa-youtube fa-lg" style="color: #c4302b;"></i></a>
           </li>
           <li class="footer_socmed">
             <a href="https://www.twitter.com"><i class="fa-brands fa-twitter fa-lg" style="color: #00acee;"></i></a>
@@ -596,7 +592,7 @@
 
   <!-- end of footer -->
 
-  <!-- start of copyright -->
+  <!-- copyright part -->
   <div style="font-size: 9pt; height: 18px; width: 100%; background-color: black; color: white; text-align: center;">
     <p class="fst-italic">Copyright &copy; 2023 - Miguel Carlos Blancaflor</p>
   </div>

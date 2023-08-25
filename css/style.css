@@ -85,18 +85,18 @@ body{
 
 .footer_nav{
     list-style: none;
-    padding-bottom: 7px;
+    padding-bottom: 15px;
     font-size: 10pt;
 }
 
 .footer_nav a{
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(145, 145, 145);
     font-weight: 500;
 }
 
 .footer_nav a:hover{
-    color: gray;
+    color: rgb(255, 255, 255);
     transition: 0.5s;
     font-weight: 700;
 
@@ -105,12 +105,10 @@ body{
 .pmethod{
     font-size: 10pt;
     font-weight: 700;
+    padding-bottom: 20px;
+    padding-top: 35px;
 }
 
-.socmed_head{
-    font-size: 10pt;
-    font-weight: 700;
-}
 
 .footer_socmed{
     list-style: none;
